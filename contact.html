@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FashionHub - Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">👕 FashionHub</div>
+    <nav>
+      <ul>
+        <li><a href="./intex.html">Home</a></li>
+        <li><a href="./shop.html">Shop</a></li>
+        <li><a href="./contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Fill out the form below.</p>
+
+    <form id="contactForm" onsubmit="return sendMessage(event)">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 FashionHub | Designed by You</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
